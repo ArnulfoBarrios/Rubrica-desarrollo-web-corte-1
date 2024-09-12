@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #A31717;
+    color: white;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #A31717;
+}
+
+.logo {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Icono de menú para vista móvil */
+.menu-icon {
+    display: none;
+    cursor: default; /* Cambia el cursor para que no sea interactivo */
+}
+
+.menu-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Mostrar el icono del menú solo en móviles */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+        cursor: default; /* No es interactivo */
+    }
+
+    .nav-links {
+        display: none; /* Mantener oculto el menú en vista móvil */
+    }
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.hero-content {
+    max-width: 50%; /* Ajustar el ancho del contenedor del texto */
+}
+
+.hero-content h1 {
+    font-size: 48px; /* Tamaño del texto del título */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero-content .btn {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero img {
+    max-width: 40%; /* Ajusta el tamaño de la imagen */
+    border-radius: 10px; /* Si necesitas bordes redondeados */
+}
+
+/* Ajuste de hero para pantallas pequeñas */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column; /* Cambia la disposición a columna en pantallas pequeñas */
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .hero img {
+        max-width: 100%;
+    }
+}
+
+/* Companies Section */
+.companies {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.companies p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #ccc; /* Color del texto */
+}
+
+.companies-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #999; /* Fondo gris en desktop */
+    padding: 10px 30px; /* Ajuste de padding */
+    border-radius: 15px; /* Bordes redondeados */
+    max-width: 700px; /* Controla el ancho del contenedor */
+    margin: 0 auto; /* Centra el contenido */
+}
+
+.companies-content img {
+    margin: 0 20px;
+    height: 40px;
+}
+
+/* Branding Section */
+.branding {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Espacio entre la imagen y el texto */
+    padding: 50px;
+}
+
+.branding img {
+    max-width: 50%; /* Ajusta el tamaño de la imagen */
+}
+
+.branding-content {
+    max-width: 40%; /* Controla el ancho del contenido de texto */
+    text-align: right; /* Alinea el texto a la derecha */
+}
+
+.branding-content h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.branding-content p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+/* Custom Section */
+.custom {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    flex-direction: column; /* Asegura que el título esté arriba */
+}
+
+.custom h2 {
+    text-align: center; /* Centrar el título */
+    margin-bottom: 40px; /* Espacio entre el título y las cartas */
+}
+
+.custom .cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px; /* Espacio entre las cartas */
+    max-width: 1000px; /* Limita el ancho del contenedor de las cartas */
+}
+
+/* Cartas */
+.card {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 300px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    color: black;
+    text-align: center;
+}
+
+.card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px; /* Separación entre imagen y contenido */
+}
+
+.card-content h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-content p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Contact Section */
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #ccc; /* Fondo gris */
+    border-radius: 15px; /* Bordes redondeados */
+    max-width: 1000px; /* Limita el ancho de la sección */
+    margin: 50px auto; /* Centra la sección */
+}
+
+.contact img {
+    max-width: 45%; /* Ajusta el tamaño de la imagen */
+    border-radius: 10px; /* Redondea las esquinas de la imagen */
+}
+
+.contact-content {
+    max-width: 45%; /* Controla el ancho del contenido de texto */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.contact-content h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contact-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.contact-content a.btn {
+    display: inline-block;
+    background-color: #A31717; /* Color del botón */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #333;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navbar, .hero, .branding, .custom, .contact, .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px; /* Ajuste de espacio entre las cartas en mobile */
+    }
+
+    .card {
+        flex-direction: column; /* Asegura que el título esté arriba en mobile */
+        max-width: 100%;
+    }
+
+    .companies-content {
+        flex-direction: row; /* Mantén la dirección en fila en la vista móvil */
+        justify-content: space-around;
+        padding: 20px;
+        background-color: #4B1248; /* Cambia el fondo a morado en la vista móvil */
+        border-radius: 15px; /* Redondea las esquinas */
+        max-width: 90%; /* Ajusta el ancho para la vista móvil */
+        margin: 0 auto; /* Centra el contenido */
+    }
+
+    .companies-content img {
+        margin: 10px 10px; /* Ajuste del margen entre los logos */
+        height: 30px; /* Reduce el tamaño de los logos en móvil */
+    }
+
+    .branding {
+        flex-direction: column; /* Cambia la disposición a columna en pantallas pequeñas */
+        text-align: center; /* Centra todo en mobile */
+    }
+
+    .branding img {
+        max-width: 100%;
+        margin-bottom: 20px; /* Agrega espacio debajo de la imagen */
+    }
+
+    .branding-content {
+        max-width: 100%;
+        text-align: center; /* Centra el texto en pantallas pequeñas */
+    }
+
+    .contact {
+        flex-direction: column; /* Cambia la disposición a columna en pantallas pequeñas */
+        text-align: center; /* Centra el contenido */
+        padding: 30px;
+        background-color: #4B1248; /* Cambiar fondo a morado en mobile */
+    }
+
+    .contact img {
+        display: none; /* Ocultar la imagen en mobile */
+    }
+
+    .contact-content {
+        max-width: 100%;
+        text-align: center; /* Centra el texto en pantallas pequeñas */
+    }
+    .contact-content a.btn {
+        display: inline-block;
+        background-color: #000000; /* Color del botón */
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    .footer {
+        background-color: #4B1248; /* Cambiar fondo del footer a morado en mobile */
+    }
+}
+
