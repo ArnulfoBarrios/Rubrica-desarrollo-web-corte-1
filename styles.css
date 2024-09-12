@@ -41,10 +41,10 @@ body {
     text-decoration: none;
 }
 
-/* Icono de menú para vista móvil */
+
 .menu-icon {
     display: none;
-    cursor: default; /* Cambia el cursor para que no sea interactivo */
+    cursor: default; 
 }
 
 .menu-icon img {
@@ -52,15 +52,15 @@ body {
     height: 30px;
 }
 
-/* Mostrar el icono del menú solo en móviles */
+
 @media (max-width: 768px) {
     .menu-icon {
         display: block;
-        cursor: default; /* No es interactivo */
+        cursor: default; 
     }
 
     .nav-links {
-        display: none; /* Mantener oculto el menú en vista móvil */
+        display: none; 
     }
 }
 
@@ -73,11 +73,11 @@ body {
 }
 
 .hero-content {
-    max-width: 50%; /* Ajustar el ancho del contenedor del texto */
+    max-width: 50%; 
 }
 
 .hero-content h1 {
-    font-size: 48px; /* Tamaño del texto del título */
+    font-size: 48px; 
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -97,14 +97,14 @@ body {
 }
 
 .hero img {
-    max-width: 40%; /* Ajusta el tamaño de la imagen */
-    border-radius: 10px; /* Si necesitas bordes redondeados */
+    max-width: 40%; 
+    border-radius: 10px; 
 }
 
-/* Ajuste de hero para pantallas pequeñas */
+
 @media (max-width: 768px) {
     .hero {
-        flex-direction: column; /* Cambia la disposición a columna en pantallas pequeñas */
+        flex-direction: column; 
         text-align: center;
     }
 
@@ -127,18 +127,18 @@ body {
 .companies p {
     margin-bottom: 20px;
     font-size: 16px;
-    color: #ccc; /* Color del texto */
+    color: #ccc; 
 }
 
 .companies-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #999; /* Fondo gris en desktop */
-    padding: 10px 30px; /* Ajuste de padding */
-    border-radius: 15px; /* Bordes redondeados */
-    max-width: 700px; /* Controla el ancho del contenedor */
-    margin: 0 auto; /* Centra el contenido */
+    background-color: #999;
+    padding: 10px 30px; 
+    border-radius: 15px; 
+    max-width: 700px; 
+    margin: 0 auto; 
 }
 
 .companies-content img {
@@ -150,17 +150,17 @@ body {
 .branding {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Espacio entre la imagen y el texto */
+    justify-content: space-between; 
     padding: 50px;
 }
 
 .branding img {
-    max-width: 50%; /* Ajusta el tamaño de la imagen */
+    max-width: 50%; /
 }
 
 .branding-content {
-    max-width: 40%; /* Controla el ancho del contenido de texto */
-    text-align: right; /* Alinea el texto a la derecha */
+    max-width: 40%; 
+    text-align: right; 
 }
 
 .branding-content h2 {
@@ -179,20 +179,20 @@ body {
     display: flex;
     align-items: center;
     padding: 50px;
-    flex-direction: column; /* Asegura que el título esté arriba */
+    flex-direction: column; 
 }
 
 .custom h2 {
-    text-align: center; /* Centrar el título */
-    margin-bottom: 40px; /* Espacio entre el título y las cartas */
+    text-align: center; 
+    margin-bottom: 40px; 
 }
 
 .custom .cards {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 30px; /* Espacio entre las cartas */
-    max-width: 1000px; /* Limita el ancho del contenedor de las cartas */
+    gap: 30px; 
+    max-width: 1000px;
 }
 
 /* Cartas */
@@ -212,7 +212,7 @@ body {
 .card img {
     width: 60px;
     height: 60px;
-    margin-bottom: 20px; /* Separación entre imagen y contenido */
+    margin-bottom: 20px; 
 }
 
 .card-content h3 {
@@ -232,20 +232,20 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 50px;
-    background-color: #ccc; /* Fondo gris */
-    border-radius: 15px; /* Bordes redondeados */
-    max-width: 1000px; /* Limita el ancho de la sección */
-    margin: 50px auto; /* Centra la sección */
+    background-color: #ccc; 
+    border-radius: 15px; 
+    max-width: 1000px; 
+    margin: 50px auto; 
 }
 
 .contact img {
-    max-width: 45%; /* Ajusta el tamaño de la imagen */
-    border-radius: 10px; /* Redondea las esquinas de la imagen */
+    max-width: 45%; 
+    border-radius: 10px; 
 }
 
 .contact-content {
-    max-width: 45%; /* Controla el ancho del contenido de texto */
-    text-align: left; /* Alinea el texto a la izquierda */
+    max-width: 45%; 
+    text-align: left; 
 }
 
 .contact-content h2 {
@@ -261,7 +261,7 @@ body {
 
 .contact-content a.btn {
     display: inline-block;
-    background-color: #A31717; /* Color del botón */
+    background-color: #A31717; 
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -303,68 +303,68 @@ body {
     .cards {
         flex-direction: column;
         align-items: center;
-        gap: 20px; /* Ajuste de espacio entre las cartas en mobile */
+        gap: 20px; 
     }
 
     .card {
-        flex-direction: column; /* Asegura que el título esté arriba en mobile */
+        flex-direction: column; 
         max-width: 100%;
     }
 
     .companies-content {
-        flex-wrap: wrap; /* Permitir que los logos se muevan a otra línea si es necesario */
-        justify-content: center; /* Centrar los logos en la vista móvil */
-        background-color: #4B1248; /* Cambia el fondo a morado en la vista móvil */
+        flex-wrap: wrap; 
+        justify-content: center; 
+        background-color: #4B1248; 
         padding: 20px;
-        border-radius: 15px; /* Redondea las esquinas */
-        max-width: 100%; /* Asegurarse de que el contenedor ocupe todo el ancho disponible */
-        margin: 0 auto; /* Centra el contenido */
+        border-radius: 15px;
+        max-width: 100%; 
+        margin: 0 auto; 
     }
 
     .companies-content img {
-        margin: 10px 10px; /* Ajuste del margen entre los logos */
-        height: 30px; /* Reduce el tamaño de los logos en móvil */
+        margin: 10px 10px; 
+        height: 30px; /
     }
 
     .branding {
-        flex-direction: column; /* Cambia la disposición a columna en pantallas pequeñas */
-        text-align: center; /* Centra todo en mobile */
+        flex-direction: column; 
+        text-align: center; 
     }
 
     .branding img {
         max-width: 100%;
-        margin-bottom: 20px; /* Agrega espacio debajo de la imagen */
+        margin-bottom: 20px; 
     }
 
     .branding-content {
         max-width: 100%;
-        text-align: center; /* Centra el texto en pantallas pequeñas */
+        text-align: center; 
     }
 
     .contact {
-        flex-direction: column; /* Cambia la disposición a columna en pantallas pequeñas */
-        text-align: center; /* Centra el contenido */
+        flex-direction: column; 
+        text-align: center; 
         padding: 30px;
-        background-color: #4B1248; /* Cambiar fondo a morado en mobile */
+        background-color: #4B1248; 
     }
 
     .contact img {
-        display: none; /* Ocultar la imagen en mobile */
+        display: none; 
     }
 
     .contact-content {
         max-width: 100%;
-        text-align: center; /* Centra el texto en pantallas pequeñas */
+        text-align: center; 
     }
     .contact-content a.btn {
         display: inline-block;
-        background-color: #000000; /* Color del botón */
+        background-color: #000000; 
         color: white;
         padding: 10px 20px;
         text-decoration: none;
         border-radius: 5px;
     }
     .footer {
-        background-color: #4B1248; /* Cambiar fondo del footer a morado en mobile */
+        background-color: #4B1248; 
     }
 }
