@@ -312,12 +312,12 @@ body {
     }
 
     .companies-content {
-        flex-direction: row; /* Mantén la dirección en fila en la vista móvil */
-        justify-content: space-around;
-        padding: 20px;
+        flex-wrap: wrap; /* Permitir que los logos se muevan a otra línea si es necesario */
+        justify-content: center; /* Centrar los logos en la vista móvil */
         background-color: #4B1248; /* Cambia el fondo a morado en la vista móvil */
+        padding: 20px;
         border-radius: 15px; /* Redondea las esquinas */
-        max-width: 90%; /* Ajusta el ancho para la vista móvil */
+        max-width: 100%; /* Asegurarse de que el contenedor ocupe todo el ancho disponible */
         margin: 0 auto; /* Centra el contenido */
     }
 
@@ -368,4 +368,3 @@ body {
         background-color: #4B1248; /* Cambiar fondo del footer a morado en mobile */
     }
 }
-
